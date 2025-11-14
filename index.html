@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+  <title>Fruteria</title>
+</head>
+<body>
+  <header>
+    <div>Frutería</div>
+    <div class="busqueda">
+      <nav id="nav-alumno"></nav>
+      <input id="input-filtro" type="text" placeholder="Buscar" />
+    </div>
+    <div class="carrito">
+      <button class="boton-carrito">Carrito: <span id="contador-header">0</span> productos</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="productos-section">
+      <h2>Nuestras Frutas</h2>
+
+      <div class="orden-botones">
+        <button id="orden-az" class="boton">Ordenar por nombre A - Z</button>
+        <button id="orden-za" class="boton">Ordenar por nombre Z - A</button>
+        <button id="orden-menor" class="boton">Ordenar por menor precio</button>
+        <button id="orden-mayor" class="boton">Ordenar por mayor precio</button>
+      </div>
+
+      <div id="contenedor-productos" class="grid-productos"></div>
+    </section>
+
+    <section class="carrito-section">
+      <h2>Carrito</h2>
+
+      <div class="carrito-contenido">
+        <ul id="lista-carrito" class="lista-carrito"></ul>
+
+        <div class="carrito-resumen">
+          <button id="vaciar-carrito" class="boton vaciar">Vaciar Carrito</button>
+          <div class="totales">
+            <p>Total: <span id="total-general">$0</span></p>
+          </div>
+          <div id="carrito-vacio" class="carrito-vacio vacio">
+            <img src="img/carrito-vacio.svg" alt="carrito vacio" />
+            <p>No hay productos en el carrito</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
